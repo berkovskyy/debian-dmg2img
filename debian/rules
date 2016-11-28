@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+CFLAGS=$(shell dpkg-buildflags --get CFLAGS)
+
+build-arch: debian/build-stamp
+debian/build-stamp:
+	$(MAKE) CFLAGS="$(CFLAGS)"
+	touch $@
+
+clean::
+	$(MAKE) clean
+	$(RM) debian/build-stamp 
+
+get-orig-source:
+	uscan --rename --upstream-version 0 || true
+	@echo successfully retrieved upstream tarball

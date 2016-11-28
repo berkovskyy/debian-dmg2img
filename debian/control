@@ -1,0 +1,18 @@
+Source: dmg2img
+Section: utils
+Priority: optional
+Maintainer: Soeren Sonnenburg <sonne@debian.org>
+Build-Depends: cdbs, debhelper (>= 9), libssl-dev, zlib1g-dev, libbz2-dev
+Standards-Version: 3.9.4
+Homepage:  http://advancemame.sourceforge.net/boot-readme.html
+Vcs-Svn: https://bollin.googlecode.com/svn/dmg2img/trunk/
+Vcs-Browser: http://vu1tur.eu.org/tools/
+
+Package: dmg2img
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool for converting compress dmg files to hfsplus images
+ DMG2IMG is a tool which allows converting Apple compressed dmg 
+ archives to standard (hfsplus) image disk files.
+ .   
+ This tool handles zlib and bzip2 compressed dmg images.
