@@ -1,7 +1,7 @@
 Source: dmg2img
 Section: utils
 Priority: optional
-Maintainer: Soeren Sonnenburg <sonne@debian.org>
+Maintainer: Denys Berkovskyy <berkovskyy@gmail.com>
 Build-Depends: cdbs, debhelper (>= 10), libssl-dev, zlib1g-dev, libbz2-dev
 Standards-Version: 4.1.1
 Homepage: http://vu1tur.eu.org/tools/
