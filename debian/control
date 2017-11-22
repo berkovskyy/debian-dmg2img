@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Soeren Sonnenburg <sonne@debian.org>
 Build-Depends: cdbs, debhelper (>= 10), libssl-dev, zlib1g-dev, libbz2-dev
-Standards-Version: 3.9.4
+Standards-Version: 4.1.1
 Homepage:  http://advancemame.sourceforge.net/boot-readme.html
 Vcs-Svn: https://bollin.googlecode.com/svn/dmg2img/trunk/
 Vcs-Browser: http://vu1tur.eu.org/tools/
